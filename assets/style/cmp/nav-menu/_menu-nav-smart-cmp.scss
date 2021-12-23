@@ -1,0 +1,259 @@
+.cmp-about {
+    padding: 0px 6px 12px 12px;
+    .about::before {
+        font-family: iconRegular;
+        content: '\f007';
+    }
+    .about {
+        margin: 20px 10px;
+        span {
+            margin-left: 10px;
+        }
+    }
+    .about-name {
+        display: flex;
+        .avatar {
+            margin: 10px;
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+        font-weight: 600;
+        h3 {
+            margin-top: 0.1rem;
+        }
+    }
+    .details {
+        display: flex;
+        flex-direction: column;
+    }
+    .icon-description::before {
+        margin-right:2px ;
+        font-family: iconSolid;
+        content: '\f036';
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        // margin-left: 5px;
+        // margin: 0 0 4px 6px;
+        padding: 8px 0;
+        h3 {
+            margin: 0;
+            min-height: 18px;
+            min-width: 40px;
+            font-size: rem(16px);
+            line-height: 20px;
+            font-weight: 600;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+        }
+        .edit-btn {
+            margin-left: 8px;
+            background-color: #091e420a;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            padding: 6px 12px;
+            transition-duration: 85ms;
+            transition-property: background-color;
+        }
+        .edit-btn:hover {
+            background-color: #091e4214;
+        }
+    }
+
+    .description-container {
+        textarea {
+            margin: 0 0 4px;
+            padding: 8px 12px;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+                Noto Sans, Ubuntu, Droid Sans, Helvetica Neue, sans-serif;
+            resize: none;
+            background: #fff;
+            color: #172b4d;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        p {
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 8px;
+            margin-left: 4px;
+        }
+        .description-edit-btn {
+            margin-top: 8px;
+            .save {
+                cursor: pointer;
+                float: left;
+                margin: 0 4px 0 0;
+                background-color: #0079bf;
+                border: none;
+                box-shadow: none;
+                color: #fff;
+                border-radius: 3px;
+                line-height: 20px;
+                padding: 6px 12px;
+                transition-duration: 85ms;
+                transition-property: background-color;
+            }
+            .save:hover {
+                background-color: #026aa7;
+            }
+            .close-btn {
+                cursor: pointer;
+                color: #42526e;
+                height: 32px;
+                line-height: 32px;
+                width: 32px;
+                font-size: rem(24px);
+                background-color: #0000;
+            }
+        }
+    }
+}
+.cmp-background {
+    
+   
+    ul {
+        margin: 5px;
+        padding: 0;
+        // justify-content: space-between;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: space-between;
+        gap: 4px;
+        margin-top: 6px
+    }
+    // .bcg-choich ul{
+
+    //     height: 100%;
+    //     position: absolute;
+    //     overflow: auto;
+    // }
+    .bcg-main {
+       
+        .choice-bcg-up {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .colors {
+                background-image: url(https://a.trellocdn.com/prgb/dist/images/colors@2x.ec32a2ed8dd8198b8ef0.jpg);
+                background-size: cover;
+            }
+        }
+        .colors,
+        .photos {
+            background-size: cover;
+            width: 152px;
+            height: 96px;
+            border-radius: 8px;
+            margin:  4px;
+        }
+        .background-menu{
+            // display: flex;
+            // align-items: center;
+            // justify-content: center;
+            text-align: center;
+            margin-top: 8px;
+            cursor: pointer;
+            h2{
+                font-size: 14px;
+                font-weight: 400;
+            }
+            
+        }
+        h2.custom{
+            font-size: 20px;
+            padding: 10px  10px 7px 10px ;
+        }
+    }
+ 
+    .plus::before {
+        font-family: iconSolid;
+        content: '\f067';
+    }
+    .card-color {
+        width: 147px;
+        height: 96px;
+        border-radius: 8px;
+        margin-top: 4px ;
+    }
+    .card-img {
+        background-size: cover;
+        width: 143px;
+        height: 96px;
+        border-radius: 8px;
+        margin: 4px;
+    }
+
+    .img-upload .plus {
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #ebecf0;
+        cursor: pointer;
+        background-size: cover;
+        width: 153px;
+        height: 96px;
+        border-radius: 8px;
+        position: absolute;
+        left: 10px;
+    }
+    .list-custom ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .card-photo {
+        background-size: cover;
+        width: 153px;
+        height: 96px;
+        border-radius: 8px;
+        // margin: 0 8px 8px;
+        cursor: pointer;
+    }
+    .scroll-container {
+        height: 40vh;
+        height: 100vh;
+        // overflow: scroll;
+        overflow-x: hidden;
+        &::-webkit-scrollbar {
+            width: 10px;
+            background: #e2e4e9;
+        }
+        &::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background: transparent;
+        }
+        &::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            // background: rgba(0, 0, 0, 0.32);
+            background: #c6cbd4;
+        }
+
+        .container-scroll-main {
+            height: fit-content;
+        }
+    }
+    div.el-input{
+        display: flex;
+        justify-content: center;
+    }
+    .el-input__inner{
+        box-shadow: inset 0 0 0 2px #dfe1e6;
+        width: 300px;
+
+    }
+    .el-input__inner:focus{
+        background-color: #fff;
+        box-shadow: inset 0 0 0 2px #0079bf;
+    
+
+    }
+}
